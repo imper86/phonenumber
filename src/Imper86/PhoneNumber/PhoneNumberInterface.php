@@ -28,7 +28,7 @@ interface PhoneNumberInterface
 
     public function getNumberType(): int;
 
-    public function getIsMobile(): bool;
+    public function isMobile(): bool;
 
     public function formatE164(): string;
 

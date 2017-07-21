@@ -30,6 +30,11 @@ class PhoneNumber implements PhoneNumberInterface
         $this->phoneNumber = $this->phoneNumberUtil->parse($phoneNumber, $defaultRegion);
     }
 
+    public function __toString()
+    {
+        return $this->getNationalNumber();
+    }
+
     public function getCountryCode(): ?int
     {
         return $this->phoneNumber->getCountryCode();
@@ -75,9 +80,9 @@ class PhoneNumber implements PhoneNumberInterface
         return $this->phoneNumberUtil->getNumberType($this->phoneNumber);
     }
 
-    public function getIsMobile(): bool
+    public function isMobile(): bool
     {
-        return $this->getNumberType() === 1;
+        return 1 === $this->getNumberType();
     }
 
     public function formatE164(): string
