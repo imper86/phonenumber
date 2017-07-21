@@ -47,7 +47,7 @@ class PhoneNumber implements PhoneNumberInterface
 
     public function getInternationalNumber(): string
     {
-        return $this->getCountryCode().$this->getNationalNumber();
+        return '+'.$this->getCountryCode().$this->getNationalNumber();
     }
 
     public function getExtension(): ?string
