@@ -1,0 +1,22 @@
+{
+    "name": "imper86/phonenumber",
+    "description": "Library for handling phone numbers",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adrian Szuszkiewicz",
+            "email": "me@imper.info"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "giggsey/libphonenumber-for-php": "^8.7"
+    },
+    "autoload": {
+        "psr-4": { "Imper86\\PhoneNumber\\": "src/Imper86/PhoneNumber" }
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^3.3"
+    }
+}
