@@ -14,6 +14,8 @@ interface PhoneNumberInterface
 
     public function getNationalNumber(): ?string;
 
+    public function getInternationalNumber(): string;
+
     public function getExtension(): ?string;
 
     public function getRawInput(): ?string;
