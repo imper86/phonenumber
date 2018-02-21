@@ -32,7 +32,7 @@ class PhoneNumber implements PhoneNumberInterface
 
     public function __toString()
     {
-        return $this->getNationalNumber();
+        return $this->formatInternational();
     }
 
     public function getCountryCode(): ?int
